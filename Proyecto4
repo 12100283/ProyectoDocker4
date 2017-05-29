@@ -1,0 +1,7 @@
+FROM ubuntu:16.04
+MAINTAINER DockerUbuntu ubudoc@hotmail.com
+RUN sudo apt-get update
+RUN sudo apt-get -y install git
+RUN sudo apt-get -y install apache2
+RUN sudo git clone https://github.com/12100283/ProyectoDcoker2
+RUN cd proyecto2 && sudo pip install -r insite.txt
